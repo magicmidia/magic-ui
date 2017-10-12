@@ -1,0 +1,56 @@
+//
+// Magic-UI Framework
+// Arrows
+//
+
+.arrow {
+    &--top {
+        @include arrow(top, #d9d9d9, 10px, true);
+    }
+    &--top-left {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--top-right {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--left {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--left-top {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--left-bottom {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--bottom {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--bottom-left {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--bottom-right {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--right {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--right-top {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+    &--right-bottom {
+        @include arrow(top-left, #d9d9d9, 10px, true);
+    }
+
+}
+
+// arrow-xs
+
+// arrow-md
+
+// arrow-bg
+
+// arrow-xl
+
+// arrow-no-border
+
+// arrow--primary ...

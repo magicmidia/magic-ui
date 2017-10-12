@@ -1,0 +1,25 @@
+//
+//  Placeholders
+//
+%clearfix {
+     ::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+// Ellipsis
+%text-overflow {
+    @include ellipsis();
+}
+
+%ellipsis {
+    display: inline-block;
+    @extend %text-overflow;
+}
+
+%ellipsis-block {
+    @extend %text-overflow;
+    display: block;
+}

@@ -1,0 +1,128 @@
+.navbar {
+    display: flex;
+    background: #e2e2e2;
+    box-shadow: 0 0 1px rgba(0, 65, 94, 0.2)!important;
+    align-items: center;
+    &--link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+        //background: seagreen;
+        color: white;
+        &:hover,
+        &:active {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: $white
+        }
+    }
+    &--toggle {
+        padding: 1em;
+        color: black;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    &--primary {
+        background: $color-primary;
+    }
+    &--secondary {
+        background: $color-secondary;
+    }
+    &--success {
+        background: $color-success;
+    }
+    &--warning {
+        background: $color-warning;
+    }
+    &--info {
+        background: $color-info;
+    }
+    &--danger {
+        background: $color-danger;
+    }
+    &--light {
+        background: $color-secondary;
+    }
+    &--dark {
+        background: $color-secondary;
+    }
+}
+
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+        .navbar--left,
+        .navbar--right {
+            display: flex;
+            flex: 1;
+        }
+        &--link {
+            width: auto;
+        }
+        &--right {
+            justify-content: flex-end;
+        }
+        &--toggle {
+            display: none;
+        }
+    }
+}
+
+.navbar {
+    div {
+        display: none;
+        @media (min-width: 48em) {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .navbar.active {
+        .toggle {
+            background: seagreen;
+            color: white;
+        }
+        div {
+            display: block;
+        }
+    }
+}
+
+.navbar__brand {
+    //width: 10em;
+    text-align: center;
+    //font-size: 1.2em;
+    padding: 1em;
+    color: white;
+    display: inline-block;
+}
+
+.brand--transparent {
+    background: none!important;
+}
+
+.brand--primary {
+    background: darken($color-primary, 20%);
+}
+
+.brand--secondary {
+    background: darken($color-secondary, 20%);
+}
+
+.brand--success {
+    background: darken($color-success, 20%);
+}
+
+.brand--info {
+    background: darken($color-info, 20%);
+}
+
+.brand--warning {
+    background: darken($color-warning, 20%);
+}
+
+.brand--danger {
+    background: darken($color-danger, 20%);
+}

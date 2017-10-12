@@ -1,0 +1,66 @@
+// 
+// Magic-UI Framework
+// Badges
+//
+
+.badge {
+    color: #fff;
+    font-weight: 300;
+    font-size: .938em;
+    border-radius: $base-radius;
+    padding: 0 .35em;
+    white-space: nowrap;
+    line-height: 1rem;
+    &--rounded {
+        padding-right: .6em;
+        padding-left: .6em;
+        border-radius: 100%;
+    }
+    &--pill {
+        padding-right: .6em;
+        padding-left: .6em;
+        border-radius: 10rem;
+    }
+    &--default {
+        color: $black;
+        background-color: #e7e8ea;
+    }
+    &--brand-primary {
+        color: $white;
+        background-color: $brand-primary;
+    }
+    &--brand-secondary {
+        color: $white;
+        background-color: $brand-secondary;
+    }
+    &--primary {
+        background-color: $color-primary;
+    }
+    &--secondary {
+        color: #1b1e21;
+        background-color: $color-secondary;
+    }
+    &--success {
+        color: #155724;
+        background-color: $color-success;
+    }
+    &--info {
+        color: #0c5460;
+        background-color: $color-info;
+    }
+    &--warning {
+        color: #856404;
+        background-color: $color-warning;
+    }
+    &--danger {
+        background-color: $color-danger;
+    }
+    &--light {
+        color: $black;
+        background-color: $color-light;
+    }
+    &--dark {
+        background-color: $color-dark;
+    }
+
+}

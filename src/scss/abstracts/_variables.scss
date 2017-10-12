@@ -1,0 +1,156 @@
+//
+// Magic-UI Framework
+// VARIABLES
+// Configure Magic-UI SCSS library by adjusting this file
+//
+
+// General Configurations
+$global-flexbox: true !default;
+// Brand and Default Color Palete
+$brand-primary: #1abc9c !default;
+$brand-primary--dark: darken($brand-primary, 5%) !default;
+$brand-secondary: #9b59b6 !default;
+$brand-dark: #18232f !default;
+$brand-light: #34495e !default;
+$color-primary: #2670bc !default;
+$color-secondary: #a8a8a8 !default;
+$color-success: #6cc788 !default;
+$color-info: #2DCEE3 !default;
+$color-warning: #ffde57 !default;
+$color-danger: #dc3545 !default;
+$color-link: #496DDB !default;
+$color-link--visited: #9140D4 !default;
+$color-link--hover: darken($color-link, 10%) !default;
+$color-link--active: #D44076 !default;
+$color-light: #d3d3d3 !default;
+$color-dark: #2a2a2a !default;
+$body-bg: #edf3f6 !default;
+$gray-lightest: #f6f6f6 !default;
+$gray-lighter: #e4e4e4 !default;
+$gray-light: #d3d3d3 !default;
+$gray: #a8a8a8 !default;
+$gray-dark: #7e7e7e !default;
+$gray-darker: #545454 !default;
+$gray-darkest: #2a2a2a !default;
+$white: #ffffff !default;
+$black: #0a0a0a !default;
+// Social colors
+$fb: rgb(59, 89, 182);
+$tw: rgb(64, 153, 255);
+$googleplus: rgb(215, 61, 50);
+$pinterest: rgb(203, 32, 39);
+$skype: rgb(18, 165, 244);
+$spotify: rgb(129, 183, 26);
+$instagram: #4e433c;
+$tumblr: #2b4964;
+$vimeo: #86b32d;
+$soundcloud: #f76600;
+$youtube: #ff3333;
+$linkedin: #4875b4;
+$flickr: #fe0883;
+$foursquare: #8fd400;
+//Flat Colors
+// Todo: Make variations from the default palete or make a new one?
+// Borders
+$border-color: #465f78 !default;
+// Shadows
+$shadow-color: rgba(0, 0, 0, .2);
+$box-shadow: 0 0 5px $shadow-color;
+// Text colors
+$text-body: $white;
+$text-gray: #969da6 !default;
+$text-muted: #969da6 !default;
+$text-color-map: ( primary: $color-primary, secondary: $color-secondary, body: $text-body, gray: $text-gray, green: $color-success, success: $color-success, red: $color-danger, error: $color-danger, warning: $color-warning);
+
+//
+//  LAYOUT
+//
+
+$global-width: rem-calc(1200) !default;
+$gutterwidth: 24px;
+$container-maxwidth: 1380px;
+$container-medium-maxwidth: 944px;
+$container-small-maxwidth: 400px;
+$col-gap: 0.75rem;
+$base-radius: 0;
+$border-box: true;
+// Badges
+$badge-color: $text-body;
+$badge-bg: $brand-light;
+$badges-color-map: ( primary: $brand-primary, secondary: $brand-secondary, dark: $brand-dark, light: $gray, success: $color-success, error: $color-danger, warning: $color-warning);
+// Buttons
+$button-bg-color: #64829f; // default color for buttons
+$button-text-color: $text-body; // default color for buttons
+$button-border-color: $body-bg;
+$button-border-radius: 2em;
+$button-sizes: ( 'normal': ( fontSize: 12px, lineHeight: 1.5, paddingTB: 10px, paddingLR: 20px), 'big': ( fontSize: 16px, lineHeight: 1.5, paddingTB: 10px, paddingLR: 30px), 'small': ( fontSize: 11px, lineHeight: 1.273, paddingTB: 6px, paddingLR: 20px), 'huge': ( fontSize: 16px, lineHeight: 1.5, paddingTB: 15px, paddingLR: 30px), 'hugeLg': ( fontSize: 18px, lineHeight: 1.5, paddingTB: 18px, paddingLR: 50px));
+// Typography
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$basefont: 'Lato', sans-serif;
+$codefont: 'Courier New', monospace;
+$global-font-size: 100% !default;
+$font-size-base: 1rem;
+$font-size-base-medium: 16px;
+$font-size-base-large: 18px;
+$font-size-small: 12px;
+$font-size: 14px;
+$font-size-large: 24px;
+$font-size-x-large: 32px;
+$font-size-xx-large: 48px;
+$font-size-xxx-large: 64px;
+$font-size-xxxx-large: 96px;
+$font-size--lg: ceil($font-size * 1.23); // ~20px
+$font-size--md: ceil($font-size * 1.14); // ~16px
+$font-size--sm: ceil($font-size * 0.92); // ~13px
+$font-size--xs: ceil($font-size * 0.85); // ~12px
+$line-height-base: 1.5em;
+$font-weight-base: 400;
+$font-weight-light: 300;
+$font-weight-bold: 500;
+$heading-font: $basefont;
+$heading-weight: 300;
+$heading-case: none;
+// Tags
+$tag-text-color: $text-body;
+$tag-bg-color: $brand-light;
+$tag-bullet: $body-bg;
+//$hr-border-color: ;
+//$hr-border-width: ;
+//$small-font-size: ;
+$link-color: #007ace !default;
+$link-hover-color: #084e8a!default;
+$link-focus-color: #084e8a!default;
+$link-active-color: #084e8a!default;
+@mixin hover-style {
+    color: $gray-dark;
+    border-color: lighten($gray-dark, 33.3%);
+    outline: 0;
+}
+
+@mixin focus-style {
+    color: $gray-darker;
+    border-color: lighten($gray-darker, 33.3%);
+    outline: 0;
+}
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacers: ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3)) !default;
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ( 25: 25%, 50: 50%, 75: 75%, 100: 100%) !default;
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1300px) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1260) !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");

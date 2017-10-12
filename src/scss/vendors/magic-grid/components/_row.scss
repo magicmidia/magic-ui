@@ -1,0 +1,64 @@
+// 
+// MagicGrid
+// Row
+//
+.row {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: auto;
+    &--no-wrap {
+        flex-wrap: nowrap!important;
+    }
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+    &--start {
+        justify-content: flex-start;
+    }
+    &--center {
+        justify-content: center;
+    }
+    &--end {
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+    &--space-between {
+        justify-content: space-between;
+    }
+    &--space-around {
+        justify-content: space-around;
+    }
+    &--valign-top {
+        align-items: flex-start;
+    }
+    &--valign-center {
+        align-items: center;
+        justify-content: center;
+    }
+    &--valign-bottom {
+        align-items: flex-end;
+    }
+    &--valign-stretch {
+        align-items: stretch;
+    }
+    &--valign-baseline {
+        align-items: baseline;
+    }
+    &--with-gutters div[class^='col'] {
+        margin: 0.5rem!important;
+    }
+    &--no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+      
+        > .col,
+        > [class*="col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+}

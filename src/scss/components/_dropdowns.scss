@@ -1,0 +1,126 @@
+//
+// Magic-UI Framework 
+// Dropdowns
+//
+.dropdown-menu {
+    position: relative;
+    overflow: visible;
+    &:hover .dropdown {
+        display: block;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    //top: 110%;
+    background: #fff;
+    //z-index: 30;
+    z-index: 1000;
+    border: 1px solid #d9d9d9;
+    height: auto;
+    width: 100%;
+    min-width: 10em;
+    //max-width: 12em;
+    border-radius: $base-radius;
+    //-webkit-box-shadow: rgba(100, 100, 100, .3) 0 0 1px 0;
+    //-moz-box-shadow: rgba(100, 100, 100, .3) 0 0 1px 0;
+    //box-shadow: rgba(100, 100, 100, .3) 0 0 1px 0;
+    //margin-left: 0;
+    top: 100%;
+    left: 0;
+    margin-top: 2px;
+    padding: .35em 0;
+    //background-clip: padding-box;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    font-size: .90em;
+    box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
+    &::before {
+        top: -16px;
+        right: auto;
+        left: 9px;
+    }
+    &::before {
+        border: 8px solid transparent;
+        border-bottom-color: rgba(27, 31, 35, 0.15);
+    }
+    &::before,
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+    }
+    &--right {}
+    &--justified {}
+    &--active a {
+        background: #f2f2f2;
+        color: $black!important;
+    }
+    &--item-disabled a {
+        color: #b3b3b3!important;
+    }
+    &--item-disabled a:hover {
+        background: transparent!important;
+        color: #b3b3b3!important;
+    }
+    &--header {
+        font-weight: 700;
+        margin-bottom: .35em!important;
+        padding: .5em .8em!important;
+        color: #333;
+    }
+    &--item {
+        box-shadow: none;
+        border-radius: none;
+        width: auto;
+        height: auto;
+        min-height: auto;
+        display: list-item;
+        float: none;
+        margin: 0;
+        text-align: left;
+        text-transform: none;
+        padding: 0;
+        position: relative;
+        list-style-type: none;
+    }
+    &--item a {
+        color: #444;
+        padding: .5em .8em;
+        display: block;
+        clear: both;
+    }
+    &--item a:hover {
+        color: $white;
+        background: $color-primary;
+        text-decoration: none;
+    }
+    &--submenu {}
+    &--submenu>a:after {
+        /*content: "\f0da";
+        width: auto;
+        margin-left: .8em;
+        font-family: FontAwesome;
+        color: #b3b3b3;
+        right: 0;*/
+        content: "▼";
+        transform: rotate(-90deg);
+        //padding: 12px 8px;
+        //padding: .5em .8em;
+        //pad
+        position: absolute;
+        right: 10px;
+        top: 0;
+        z-index: 1;
+        //color: #b3b3b3;
+        text-align: center;
+        width: 10%;
+        height: 100%;
+        pointer-events: none;
+    }
+    &--separator-above {
+        padding-top: .35em;
+        margin-top: .35em;
+        border-top: 1px solid #d9d9d9;
+    }
+}

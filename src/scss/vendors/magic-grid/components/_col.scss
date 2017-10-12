@@ -1,0 +1,54 @@
+//
+// MagicGrid
+// Col
+//
+@for $i from 1 through $base-grid__cols {
+    .col-#{$i} {
+        flex-basis: (100 / (($base-grid__cols) / $i)) * 1%;
+        //margin: 0 $base-gutter;
+    }
+}
+
+@each $modifier,
+$breakpoint in $map-grid-props {
+    @include create-col-classes($modifier, $base-grid__cols, $breakpoint);
+}
+
+.col--no-gutters {
+    padding: 0;
+}
+
+.col--with-gutters {
+    padding: 0.5rem;
+}
+
+.col--first {
+    order: -1;
+}
+
+.col--last {
+    order: 1;
+}
+
+.col--valign-top {
+    align-self: flex-start!important;
+    align-items: flex-start;
+}
+
+.col--valign-center {
+    align-self: center!important;
+    align-items: center;
+}
+
+.col--valign-bottom {
+    align-self: flex-end!important;
+    align-items: flex-end;
+}
+
+.col--reverse {
+    flex-direction: column-reverse!important;
+}
+
+.col--valign-stretch {
+    align-self: stretch !important;
+}

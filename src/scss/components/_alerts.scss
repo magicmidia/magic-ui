@@ -1,0 +1,53 @@
+//
+// Magic-UI Framework
+// Alerts
+//
+
+.alert {
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: $base-radius;
+
+    &--default {
+        border-color: #e7e8ea;
+    }
+    &--brand-primary {
+        background: $brand-primary;
+    }
+    &--brand-secondary {
+        color: $white;
+        background: $brand-secondary;
+    }
+    &--primary {
+        color: $white;
+        background: $color-primary;
+    }
+    &--secondary {
+        color: #1b1e21;
+        background: $color-secondary;
+    }
+    &--success {
+        color: #155724;
+        background: $color-success;
+    }
+    &--info {
+        color: #0c5460;
+        background: $color-info;
+    }
+    &--warning {
+        color: #856404;
+        background: $color-warning;
+    }
+    &--danger {
+        color: $white;
+        background: $color-danger;
+    }
+    &--light {
+        background: $color-light;
+    }
+    &--dark {
+        color: $white;
+        background: $color-dark;
+    }
+}

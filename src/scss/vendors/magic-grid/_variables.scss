@@ -1,0 +1,15 @@
+// 
+// MagicGrid
+// Variables
+// 
+$base-rowName: row !default;
+$base-colName: col !default;
+$base-attributeName: class !default;
+$base-gutter: 0.5rem !default; // Total left + right
+$base-grid__cols: 12 !default;
+$base-vertical-gutter: 1rem !default;
+$row__bp-sm: 576 !default;
+$row__bp-md: 768 !default;
+$row__bp-lg: 992 !default;
+$row__bp-xl: 1200 !default;
+$map-grid-props: ( '': 0, '-sm': $row__bp-sm, '-md': $row__bp-md, '-lg': $row__bp-lg, '-xl': $row__bp-xl);

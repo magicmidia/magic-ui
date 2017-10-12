@@ -1,0 +1,19 @@
+/*
+ * MagicUI Framework - Main SCSS
+ * MagicMidia / Bruno Cavalcante Barbosa
+ * Version: 0.0.1 ALPHA
+*/
+
+@charset 'UTF-8';
+// Dependencies
+//@import 'scss/vendors/normalize-scss/normalize';
+//@import 'scss/vendors/xy-grid/xy-grid';
+@import 'scss/vendors/breakpoint/breakpoint';
+//@import 'scss/vendors/sass-flexbox-grid/main';
+@import 'scss/vendors/magic-grid/magic-grid';
+@import 'scss/vendors/animate-sass/animate';
+// Init variables
+@import 'scss/abstracts/functions';
+@import 'scss/abstracts/variables';
+// Add library
+@import 'library';
